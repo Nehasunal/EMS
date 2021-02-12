@@ -1,0 +1,67 @@
+<div class="container-fluid mt-4">
+
+<div class="panel panel-default">
+  <div class="panel-heading">Employee Entry Form </div>
+  <br>
+  <br>
+  <div class="panel-body">
+    <form class="form-horizontal" (submit)="addUser()">
+  <div class="form-group">
+    <label for="emp_name" class="col-sm-2 control-label">Employee's Full Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.username" name="username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="role" class="col-sm-2 control-label">Role </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.role" name="role">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="col-sm-2 control-label">Email </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.email" name="email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-sm-2 control-label">Password </label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" [(ngModel)]="model.password" name="password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="title" class="col-sm-2 control-label">Title </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" [(ngModel)]="model.title" name="title">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="department" class="col-sm-2 control-label">Department Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.department" name="department">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="salary" class="col-sm-2 control-label">Employee's Salary  </label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control"  [(ngModel)]="model.salary" name="salary">
+    </div>
+  </div>
+<br>
+<br>
+<br>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success"> Save</button>
+      <a  class="btn btn-info" (click)="goBack()"> Cancel</a>
+    </div>
+
+  </div>
+</form>
+
+  </div>
+</div>
+
+</div>

@@ -1,0 +1,3 @@
+.required::after {     content: " *";     color: red; }
+
+.form-control.ng-invalid ~ label.checkbox-inline::after {     content: " *";     color: red; }

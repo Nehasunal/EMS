@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<hr>
+<div class="container-fluid mt-4">
+
+<table class="table table-bordered">
+		  <thead>
+			<tr>
+				<td>Id</td>
+			  <td>Name</td>
+        <td>Email</td>
+			  <td>Title</td>
+			  <td>Department</td>
+				<td>Salary</td>
+			  <td width="200" align="center">Action</td>
+			</tr>
+		  </thead>
+		  <tbody>
+			 <tr  *ngFor="let emp of employees ">
+				 <td>{{emp.id}}</td>
+				<td>{{emp.username}}</td>
+        <td>{{emp.email}}</td>
+				<td>{{emp.title}}</td>
+				<td>{{emp.department}}</td>
+				<td>{{emp.salary}}</td>
+				<!-- <tr>
+				<td>a</td>
+				<td>s</td>
+				<td>s</td>
+				<td>d</td>
+				<td>d</td> -->
+				<td width="200">
+					<a class="btn btn-dark btn-outline-light"  routerLink="/edit/{{emp.id}}"> Edit</a>
+					<!-- /{{user.id}} -->
+			<a class="btn btn-danger btn-outline-light" (click)="deleteUser(emp.id)"> Delete</a>
+<!-- (user.id) -->
+				</td>
+			 </tr>
+
+		  </tbody>
+		</table>
+
+  </div>
